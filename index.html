@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+ <html> 
+ <head> 
+     <meta charset="UTF-8"> 
+  
+
+ </head>
+ <body>
+
+ <div id="export_word">
+ <a href="javascript:void(0)" class="btn btn-primary" onclick="exportWord()">导出</a>
+             <table class="gridtable" style="text-align: center;font-size: 14px;color: #333333; border-width: 1px; width: 708px;height: 594px;margin-left: 9%;border-color: #666666;border-collapse: collapse;" cellpadding="0" cellspacing="0" border="1">
+				<tr style="padding: 8px;">
+					<th colspan="2">项目部填写（项目立项前为售前或销售、立项后为项目经理）</th>
+				</tr>
+				<tr>
+					<th>项目名称：</th>
+					<th></th>
+				</tr>
+				<tr>
+					<th>软件定制开发需求：
+					（可备注另附文件）
+					</th>
+					<th></th>
+				</tr>
+				<tr>
+					<th colspan="2" style="text-align:left">产品经理填写</th>
+				</tr>
+				<tr>
+					<th>是否豁免定义为非定制，暨定义为产品开发</th>
+					<th>_____________（默认属于定制）</th>
+				</tr>
+				<tr>
+					<th>可行性分析</th>
+					<th>全部可行/部分可行详见下文/不可行或不建议</th>
+				</tr>
+				<tr>
+					<th>难度分析</th>
+					<th>难、一般、较为简单</th>
+				</tr>
+				<tr>
+					<th>通用性分析	</th>
+					<th>________分（1-5分，1分为最不通用，5分最通用）</th>
+				</tr>
+				<tr>
+					<th>工作量分析</th>
+					<th>_______天*人</th>
+				</tr>
+				<tr>
+					<th>工期分析</th>
+					<th>_______工作日</th>
+				</tr>
+				<tr>
+					<th>最早启动时间</th>
+					<th></th>
+				</tr>
+				<tr style="height:100px">
+					<th>定制开发需求反馈、解释、更正描述：
+					（可备注另附文件）
+					</th>
+					<th></th>
+				</tr>
+				<tr>
+					<th colspan="2" style="text-align:left">总经理批复</th>
+					
+				</tr>
+				<tr>
+					<th>定制支持建议
+					</th>
+					<th>
+						是否支持 __________          
+						<p>（商务报价，默认按照基本报价标准）</p>
+
+					</th>
+				</tr>
+			
+			</table>
+    
+    <script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/FileSaver.js"></script>
+	<script src="js/jquery.wordexport.js"></script>
+ </body>
+ <script async>
+    function exportWord() {
+        $("#export_word").wordExport();
+    }
+</script>
+ </html>
